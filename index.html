@@ -1,0 +1,207 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
+    <title>Burgala</title>
+
+    <link rel="shortcut icon" href="./hamburguesa-removebg-preview.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="gridHome">
+
+        <header>
+
+            <nav class="navbar">
+
+                <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+
+                <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+                    <span class="material-icons">menu</span>
+                </button>
+
+                <a class="index" href="./index.html">
+                    <h1 class="navbar-title"><b>Burgala.</b></h1>
+                </a>
+
+                <nav class="navbar-menu">
+                    <div>
+                        <a href="">
+
+                            <button type="button" class="active">Nosotros</button>
+                        </a>
+
+                        <a href="">
+
+                            <button type="button" class="active">Menú</button>
+                        </a>
+
+                        <a href="">
+
+                            <button type="button" class="active">Contacto</button>
+                        </a>
+                    </div>
+                    <div>
+                        <img class="logoHome" src="./hamburguesa-removebg-preview.png" alt="logo">
+                    </div>
+
+                </nav>
+
+            </nav>
+
+        </header>
+
+        <script type="text/javascript">
+            const toggleMenuOpen = () => {
+                document.body.classList.toggle("open");
+            };
+        </script>
+
+
+        <main class="mainHome">
+
+            <div class="card">
+                <div class="card-body">
+                    <img class="imgLogo" src="./logo-burgala-removebg-preview.png" alt="logo">
+                    <h2 class="card-title">Bienvenidos</h2>
+                    <p class="card-text"> Burguers / Take Away & Deli</p>
+                </div>
+            </div>
+            <div class="div-since">
+                <p class="text-since"><b>Since 2016.</b></p>
+            </div>
+
+            <section class="section-menu">
+
+                <p id="menu-title" onclick="toggleMenuSection()"><b>Menú</b></p>
+
+                <p class="text-menu">Todos nuestros productos estan elaborados con ingredientes de primera calidad, para
+                    ofrecer el mejor servicio y los mejores productos!</p>
+
+                <div class="carousel-inner" id="hidden">
+                    <div class="carousel-item">
+                        <img src="/pepinato.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/triple-cheese.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/mega.png" alt="Third slide">
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-contacto">
+                <p id="contacto-title"><b>Contacto</b></p>
+            </section>
+
+            <div class="cardDos">
+                <div class="card-body">
+
+
+                    <div class="card-wpp">
+                        <h3 class="titulo-wpp">Whatsapp</h3>
+                        <p class="text-wpp">Podes contactarnos directamente por whatsapp tocando el siguiente botón</p>
+                        <button class="boton-wpp">
+                            <a href="https://wa.link/mh0fg9" target="_blank">
+                                <img src="./whatsapp.svg" alt="whatsapp">
+                            </a>
+                        </button>
+                    </div>
+
+
+                    <div class="card-pedidos">
+                        <h3 class="titulo-pedidos">Pedidos Ya!</h3>
+                        <p class="text-pedidos">Tambien ofrecemos nuestros servicios por la app de Pedidos Ya!</p>
+                        <button class="boton-pedidos">
+                            <a href="https://www.pedidosya.com.ar/restaurantes/vicente-lopez/burgala-menu"
+                                target="_blank">
+                                <img src="./pedidosya.svg" alt="pedidosya">
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
+
+        <footer class="ftHome">
+
+            <div class="flexTextoFt">
+                <p class="textoFt">Copyrigth - todos los derechos reservados</p>
+                <p class="textoFt">Seguinos en nuestras redes</p>
+            </div>
+
+            <div class="flexbotones">
+                <a class="instagram" href="https://www.instagram.com/hechoamanottt/" target="_blank">
+                    <img class="iconoFtHome" src="./instagram.svg" alt="instagram">
+                </a>
+
+                <a class="whats" href="
+                https://wa.me/+5401125204181?text=Hola,%20somos%20Hecho%20a%20mano!%E2%9C%8B%20te%20recomendamos%20que%20para%20una%20mejor%20cotizaci%C3%B3n%20nos%20indiques:%20zona%20a%20tatuar,%20cm%20aproximados%20del%20dise%C3%B1o%20y%20alguna%20idea%20sobre%20el%20tatuaje!%F0%9F%99%8C%20-%20en%20un%20toque%20vas%20a%20tener%20una%20respuesta%F0%9F%91%8C
+                " target="_blank">
+                    <img class="iconoFtHome" src="./whatsapp.svg" alt="whatsapp">
+                </a>
+
+                <a class="linked" href="https://www.linkedin.com/in/franciscogaleano1/" target="_blank">
+                    <img class="iconoFtHome" src="./linkedin.svg" alt="linkedin">
+                </a>
+
+            </div>
+        </footer>
+    </div>
+
+    <script>
+
+
+        const carouselInner = document.querySelector('.carousel-inner');
+        const items = document.querySelectorAll('.carousel-item');
+
+
+        let currentIndex = 0;
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % items.length;
+            const translateValue = -currentIndex * 100 + '%';
+            carouselInner.style.transform = 'translateX(' + translateValue + ')';
+        }, 1500);
+
+
+
+
+
+
+
+
+
+
+        ScrollReveal().reveal('.card', { delay: 200 });
+        ScrollReveal().reveal('.imgLogo', { delay: 250 });
+        ScrollReveal().reveal('.cardDos', { delay: 250 });
+
+    </script>
+
+
+    <!--Script de BST-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
