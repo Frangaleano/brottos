@@ -38,17 +38,17 @@
 
                 <nav class="navbar-menu">
                     <div>
-                        <a href="">
+                        <a href="#nosotros">
 
                             <button type="button" class="active">Nosotros</button>
                         </a>
 
-                        <a href="">
+                        <a href="#section-menu">
 
                             <button type="button" class="active">Menú</button>
                         </a>
 
-                        <a href="">
+                        <a href="#section-contacto">
 
                             <button type="button" class="active">Contacto</button>
                         </a>
@@ -72,18 +72,21 @@
 
         <main class="mainHome">
 
-            <div class="card">
-                <div class="card-body">
-                    <img class="imgLogo" src="./logo-burgala-removebg-preview.png" alt="logo">
-                    <h2 class="card-title">Bienvenidos</h2>
-                    <p class="card-text"> Burguers / Take Away & Deli <br>Martes a Domingo - 19hs a 23hs</p>
-                </div>
-            </div>
-            <div class="div-since">
-                <p class="text-since"><b>Since 2016.</b></p>
-            </div>
+            <section id="nosotros">
 
-            <section class="section-menu">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="imgLogo" src="./logo-burgala-removebg-preview.png" alt="logo">
+                        <h2 class="card-title">Bienvenidos</h2>
+                        <p class="card-text"> Burguers / Take Away & Deli <br>Martes a Domingo - 19hs a 23hs</p>
+                    </div>
+                </div>
+                <div class="div-since">
+                    <p class="text-since"><b>Since 2016.</b></p>
+                </div>
+            </section>
+
+            <section id="section-menu">
 
                 <p id="menu-title" onclick="toggleMenuSection()"><b>Menú</b></p>
 
@@ -103,24 +106,25 @@
                 </div>
             </section>
 
-            <section class="section-contacto">
+            <section id="section-contacto">
                 <p id="contacto-title"><b>Contacto</b></p>
 
                 <div class="cardDos">
                     <div class="card-body">
-    
-    
+
+
                         <div class="card-wpp">
                             <h3 class="titulo-wpp">Whatsapp</h3>
-                            <p class="text-wpp">Podes contactarnos directamente por whatsapp tocando el siguiente botón</p>
+                            <p class="text-wpp">Podes contactarnos directamente por whatsapp tocando el siguiente botón
+                            </p>
                             <button class="boton-wpp">
                                 <a href="https://wa.link/mh0fg9" target="_blank">
                                     <img src="./whatsapp.svg" alt="whatsapp">
                                 </a>
                             </button>
                         </div>
-    
-    
+
+
                         <div class="card-pedidos">
                             <h3 class="titulo-pedidos">Pedidos Ya!</h3>
                             <p class="text-pedidos">Tambien ofrecemos nuestros servicios por la app de Pedidos Ya!</p>
@@ -131,13 +135,13 @@
                                 </a>
                             </button>
                         </div>
-    
+
                         <div class="card-instagram">
                             <h3 class="titulo-instagram">Instagram</h3>
-                            <p class="text-instagram">Podes seguirnos en nuestro instagram para no perderte ninguna promocion!</p>
+                            <p class="text-instagram">Podes seguirnos en nuestro instagram para no perderte ninguna
+                                promocion!</p>
                             <button class="boton-instagram">
-                                <a href="https://www.instagram.com/burgalagourmet/"
-                                    target="_blank">
+                                <a href="https://www.instagram.com/burgalagourmet/" target="_blank">
                                     <img src="./instagram.svg" alt="instagram">
                                 </a>
                             </button>
@@ -152,7 +156,8 @@
                         <h3 class="info">Telefonos</h3>
                         <p class="text-info">011 2197-9876<br>011 2510-9398</p>
                         <h3 class="info">Horarios</h3>
-                        <p class="text-info">Martes a Jueves<br>19hs a 22.30hs<br>Viernes y sabado<br>19hs a 23hs<br>Domingo<br>19hs a 22.30hs</p>
+                        <p class="text-info">Martes a Jueves<br>19hs a 22.30hs<br>Viernes y sabado<br>19hs a
+                            23hs<br>Domingo<br>19hs a 22.30hs</p>
                     </div>
                 </div>
 
@@ -210,9 +215,9 @@
 
 
 
-        ScrollReveal().reveal('.card', { delay: 200 });
-        ScrollReveal().reveal('.imgLogo', { delay: 250 });
-        ScrollReveal().reveal('.cardDos', { delay: 250 });
+        ScrollReveal().reveal('#nosotros', { delay: 200 });
+        ScrollReveal().reveal('#section-menu', { delay: 250 });
+        ScrollReveal().reveal('#section-contacto', { delay: 250 });
 
     </script>
 
